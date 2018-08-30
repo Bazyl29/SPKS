@@ -1,0 +1,86 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.1.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      muSgs;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [1 -1 -1 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    wall-13
+    {
+        type            muSgsUSpaldingWallFunction;
+        value           uniform 0;
+    }
+    wall-12
+    {
+        type            muSgsUSpaldingWallFunction;
+        value           uniform 0;
+    }
+    wall-11
+    {
+        type            muSgsUSpaldingWallFunction;
+        value           uniform 0;
+    }
+    wall-10
+    {
+        type            muSgsUSpaldingWallFunction;
+        value           uniform 0;
+    }
+    wall-9
+    {
+        type            muSgsUSpaldingWallFunction;
+        value           uniform 0;
+    }
+    wall-8
+    {
+        type            muSgsUSpaldingWallFunction;
+        value           uniform 0;
+    }
+    wall-7
+    {
+        type            muSgsUSpaldingWallFunction;
+        value           uniform 0;
+    }
+    wall-6
+    {
+        type            muSgsUSpaldingWallFunction;
+        value           uniform 0;
+    }
+    fuel-inlet-5
+    {
+        type            muSgsUSpaldingWallFunction;
+        value           uniform 0;
+    }
+    air-inlet-4
+    {
+        type            zeroGradient;
+    }
+    poutlet-3
+    {
+        type            zeroGradient;
+    }
+    axis-2
+    {
+        type            symmetry //??
+    }
+    frontAndBackPlanes
+    {
+        type            empty;
+    }
+}
+
+// ************************************************************************* //
